@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="web_shop.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <title>Phone shop</title>
+  </head>
+    <body> 
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <a class="navbar-brand" href="#">MaxPHONE</a>
+                        <div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
+                            <ul class="nav navbar-nav ml-auto">
+                                <li>
+                                    <div class="simpleCart_quantity"></div>          
+                                </li>
+                                <li class="nav-item ">
+                                <a class="nav-link" data-toggle="modal" data-target=".bd-example-modal-lg" href="#">
+                                    <i class="fas fa-shopping-cart koszyk"></i>
+                                </a>
+                                </li>
+                            </ul>
+                        </div> 
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Koszyk <span class="showIfEmpty">jest pusty</span></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="hideIfEmpty"> 
+                        <div class="modal-body">
+                            <div class="simpleCart_items"></div>   
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Łącznie</th>
+                                            <th>Koszty przesyłki</th>
+                                            <th>Do zapłaty</th>
+                                            </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><div class="simpleCart_total"></div></td>
+                                            <td><div class="simpleCart_shipping"></div></td>
+                                            <td><div class="simpleCart_grandTotal"></div></td>                
+                                        </tr>
+                                    </tbody>
+                                </table>
+                        </div>
+                        <div class="modal-footer">    
+                            <a href="javascript:;" class="simpleCart_checkout btn btn-success">złóż zamówienie </a>
+                            <a href="javascript:;" class="simpleCart_empty btn btn-danger">opróżnij koszyk </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container"> 
+            <div class="row">        
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-sm-12">
+                                <h2 class="item_name"> DOOGEE Y8 </h2>
+                                <img  class="item_thumb" src="images/DOOGEE Y81.jpg" alt="phone_1"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-sm-12">
+                                <h2 class="item_price">445 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-sm-4">        
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-sm-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Lenovo Z5 </h2>
+                                <img class="item_thumb" src="images/LENOVO Z5.jpg" alt="phone_2"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">590 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> UMIDIGI A3</h2>
+                                <img class="item_thumb" src="images/UMIDIGI A3.jpg" alt="phone_3"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">480 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Xiaomi POCOPHONE F1 </h2>
+                                <img class="item_thumb" src="images/XIAOMI POCOPHONE F1.jpg" alt="phone_4"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">575 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Xiaomi Redmi 6 PRO </h2>
+                                <img class="item_thumb" src="images/XIAOMI REDMI 6 PRO DUAL AL CAMERA.jpg" alt="phone_5"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">820 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Xiaomi Redmi Note 6 PRO </h2>
+                                <img class="item_thumb" src="images/XIAOMI REDMI NOTE 6 PRO.jpg" alt="phone_6"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">940 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Asus ZenFone Max </h2>
+                                <img class="item_thumb" src="images/asus zenFone Max.jpg" alt="phone_7"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">670 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Huawei Honor 10 </h2>
+                                <img class="item_thumb" src="images/huawei honor 10 global Version.jpg" alt="phone_8"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">1150 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+            </div>   
+            <div class="row">
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Huawei Honor 8x Max </h2>
+                                <img class="item_thumb" src="images/huawei honor 8x max.jpg" alt="phone_9"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">990 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-4 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Le Eco le2 x520 </h2>
+                                <img class="item_thumb" src="images/le eco le2 x520.jpg" alt="phone_10"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">520 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-4 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Xiaomi Mi Note 3 </h2>
+                                <img class="item_thumb" src="images/xiaomi mi note 3.jpg" alt="phone_11"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">1050 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+                <div class="col-md-3 text-center phone">
+                    <div class="simpleCart_shelfItem">
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_name"> Zte v5G-k3dx </h2>
+                                <img class="item_thumb" src="images/zte v5G-k3dx.jpg" alt="phone_12"/>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-12">
+                                <h2 class="item_price">610 zł</h2>
+                            </div>
+                        </div> <!-- /row -->
+                        <div class="row"> <!-- row -->
+                            <div class="col-md-4">                         
+                            </div>
+                            <div class="col-md-4">
+                                <input type="text" value="1" class="item_Quantity form-control" placeholder="ilość">
+                            </div>
+                            <div class="col-md-4">
+                                <input type="button" class="item_add btn btn-primary" value="dodaj">
+                            </div>
+                        </div> <!-- /row -->
+                    </div> <!-- /simpleCart shelfItem -->
+                </div> <!-- /col-md-3 text-center phone -->
+            </div>        
+        </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="simpleCart.js" type="text/javascript"></script>
+    <script>
+simpleCart({
+    // array representing the format and columns of the cart,
+    // see the cart columns documentation
+    cartColumns: [
+        { attr: "name", label: "Produkt"},
+        { view:'image' , attr:'thumb', label: false},
+        { view: "currency", attr: "price", label: "Cena"},
+        { view: "decrement", label: false, text:'<i class="fas fa-minus"></i>'},
+        { attr: "quantity", label: "Ilość"},
+        { view: "increment", label: false, text:'<i class="fas fa-plus"></i>'},
+        { view: "currency", attr: "total", label: "Razem" },
+        { view: "remove", text: '<i class="fas fa-times-circle"></i>', label: false}
+    ],
+    // "div" or "table" - builds the cart as a 
+    // table or collection of divs
+    cartStyle: "table", 
+    // how simpleCart should checkout, see the 
+    // checkout reference for more info 
+    checkout: { 
+        type: "PayPal" , 
+        email: "maksymilian.dabrowski9#@gmail.com" 
+    },
+    // set the currency, see the currency 
+    // reference for more info
+    currency: "PLN",
+    // collection of arbitrary data you may want to store 
+    // with the cart, such as customer info
+
+    shippingCustom: function(){ 
+         if( simpleCart.quantity() > 2 ){
+              return 0;
+         } else {
+              return 15;
+         }
+    }
+});
+simpleCart.bind( 'update' , function(){
+    if(simpleCart.quantity() === 0)
+    {
+        $(".hideIfEmpty").hide();
+        $(".showIfEmpty").show();
+    }
+    else
+    {
+        $(".hideIfEmpty").show();
+        $(".showIfEmpty").hide();
+    }
+});
+    </script>
+  </body>
+</html>

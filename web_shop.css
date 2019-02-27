@@ -1,0 +1,59 @@
+.phone:hover{
+    transform:translate(0px,-15px);
+}
+.phone{
+    padding:25px;
+    transition: all .3s;
+    -webkit-transition: all .4s;
+    margin-bottom: 30px;
+}
+body{
+}
+.item_name{
+    font-size: 17px;
+    font-family: 'Raleway', sans-serif;
+    color: #878;
+}
+.form-control{
+       font-size: 12px;
+}
+img{
+    display: block;
+    margin:0 auto;
+}
+.btn-primary{
+    font-size: 12px;
+}
+.item_price{
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+    color: red;   
+}
+.fas fa-shopping-cart{
+    font-size: 10rem; 
+}
+.nav-link{
+    font-size:40px;
+}
+.simpleCart_quantity{
+    width:30px;
+    height: 30px;
+    text-align: center;
+    background-color: red;
+    color:white;
+    border-radius: 15px;
+    line-height: 30px;
+}
+.simpleCart_items img{
+    max-width: 50px;
+    max-height: 50px;
+}
+.item-quantity, .item-decrement, item-increment{
+    text-align: center;
+}
+.navbar-brand{
+    font-size: 30px;
+    font-family: 'Raleway', sans-serif; 
+}
+
